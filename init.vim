@@ -57,6 +57,9 @@ Plug 'github/copilot.vim'
 " Image preview
 Plug 'adelarsq/image_preview.nvim'
 
+" List buffers
+Plug 'kilavila/nvim-bufferlist'
+
 call plug#end()
 
 " Setting Plugin
