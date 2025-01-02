@@ -23,6 +23,7 @@ Plug 'hrsh7th/vim-vsnip'
 
 " Autoformat
 Plug 'vim-autoformat/vim-autoformat'
+Plug 'mattn/efm-langserver'
 
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
