@@ -34,6 +34,8 @@ Plug 'terrortylor/nvim-comment'
 
 " Theme
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+" Transparent background
+" Plug 'tribela/transparent.nvim'
 
 " TagBar
 Plug 'preservim/tagbar'
