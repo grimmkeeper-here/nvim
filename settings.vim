@@ -7,5 +7,5 @@ set number
 
 let g:go_def_mapping_enabled=0
 
-colorscheme tokyonight-storm
+" colorscheme tokyonight-storm
 setlocal spell spelllang=en_us
