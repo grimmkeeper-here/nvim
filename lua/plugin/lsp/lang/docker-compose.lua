@@ -1,6 +1,6 @@
 require "plugin.lsp.utils"
-require('lspconfig')['docker_compose_language_service'].setup{
+vim.lsp.enable('docker_compose_language_service', {
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities
-}
+})

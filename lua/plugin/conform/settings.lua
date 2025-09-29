@@ -3,7 +3,9 @@ require("conform").setup({
 	  	-- python
 	    python = { "isort", "black" },
 	    -- clang
-	    c = { 'clang_format' },
+	    c = { 'astyle', 'clang_format' },
+      -- java
+      java = {'astyle'},
 	},
 	formatters = {
         clang_format = {

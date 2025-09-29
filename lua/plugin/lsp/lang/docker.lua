@@ -1,6 +1,6 @@
 require "plugin.lsp.utils"
-require('lspconfig')['dockerls'].setup{
+vim.lsp.enable('dockerls', {
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities
-}
+})

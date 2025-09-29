@@ -91,5 +91,8 @@ lua require('plugin.image-preview.settings')
 " Formatter settings
 lua require('plugin.conform.settings')
 
+" Copilot settings
+lua require('plugin.copilot.settings')
+
 " Load settings final to override all unused settings from plugin
 exe 'source' '~/AppData/Local/nvim/settings.vim'

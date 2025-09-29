@@ -1,6 +1,6 @@
 require "plugin.lsp.utils"
-require('lspconfig')['quick_lint_js'].setup{
+vim.lsp.enable('quick_lint_js', {
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities
-}
+})

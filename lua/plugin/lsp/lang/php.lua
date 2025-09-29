@@ -1,6 +1,6 @@
 require "plugin.lsp.utils"
-require('lspconfig')['phpactor'].setup{
+vim.lsp.enable('phpactor', {
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities
-}
+})
