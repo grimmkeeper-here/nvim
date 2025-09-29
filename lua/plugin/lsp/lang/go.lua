@@ -1,6 +1,6 @@
 require "plugin.lsp.utils"
-require('lspconfig')['gopls'].setup{
+vim.lsp.enable('gopls', {
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities
-}
+})

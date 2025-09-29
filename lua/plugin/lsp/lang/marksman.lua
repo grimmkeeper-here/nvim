@@ -1,6 +1,6 @@
 require "plugin.lsp.utils"
-require('lspconfig')['marksman'].setup{
+vim.lsp.enable('marksman', {
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities
-}
+})

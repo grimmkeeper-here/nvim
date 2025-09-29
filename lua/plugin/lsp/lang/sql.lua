@@ -1,6 +1,6 @@
 require "plugin.lsp.utils"
-require('lspconfig')['sqlls'].setup{
+vim.lsp.enable('sqlls', {
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities
-}
+})

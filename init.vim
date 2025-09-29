@@ -22,8 +22,10 @@ Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 
 " Autoformat
-Plug 'vim-autoformat/vim-autoformat'
 Plug 'mattn/efm-langserver'
+Plug 'stevearc/conform.nvim'
+" Need to check autoformat with black python - neovim lib is old
+" Plug 'vim-autoformat/vim-autoformat'
 
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
@@ -33,7 +35,8 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'terrortylor/nvim-comment'
 
 " Theme
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+" Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'tribela/transparent.nvim'
 
 " TagBar
 Plug 'preservim/tagbar'
@@ -85,5 +88,11 @@ lua require('plugin.lsp-trouble.settings')
 " Image preview
 lua require('plugin.image-preview.settings') 
 
+" Formatter settings
+lua require('plugin.conform.settings')
+
+" Copilot settings
+lua require('plugin.copilot.settings')
+
 " Load settings final to override all unused settings from plugin
-exe 'source' '~/.config/nvim/settings.vim'
+exe 'source' '~/AppData/Local/nvim/settings.vim'

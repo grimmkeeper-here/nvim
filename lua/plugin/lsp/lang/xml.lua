@@ -1,6 +1,6 @@
 require "plugin.lsp.utils"
-require('lspconfig')['lemminx'].setup{
+vim.lsp.enable('lemminx', {
     on_attach = on_attach,
     flags = lsp_flags,
     capabilities = capabilities
-}
+})
