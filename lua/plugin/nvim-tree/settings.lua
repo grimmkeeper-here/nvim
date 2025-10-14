@@ -17,3 +17,9 @@ require("nvim-tree").setup({
     no_buffer = false,
   },
 })
+
+-- Keymaps for NvimTree
+local api = require("nvim-tree.api")
+
+-- Toggle tree
+vim.keymap.set("n", "<leader>e", api.tree.toggle, { desc = "Toggle NvimTree" })

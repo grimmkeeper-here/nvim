@@ -64,6 +64,9 @@ Plug 'adelarsq/image_preview.nvim'
 " List buffers
 Plug 'kilavila/nvim-bufferlist'
 
+" Autotag
+Plug 'windwp/nvim-ts-autotag'
+
 call plug#end()
 
 " Setting Plugin
@@ -93,6 +96,9 @@ lua require('plugin.conform.settings')
 
 " Copilot settings
 lua require('plugin.copilot.settings')
+
+" Autotag settings
+lua require('plugin.autotag.settings')
 
 " Load settings final to override all unused settings from plugin
 exe 'source' '~/AppData/Local/nvim/settings.vim'
