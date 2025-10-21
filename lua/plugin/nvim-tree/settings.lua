@@ -15,6 +15,7 @@ require("nvim-tree").setup({
     dotfiles = false,
     git_clean = false,
     no_buffer = false,
+    git_ignored = false,
   },
 })
 
