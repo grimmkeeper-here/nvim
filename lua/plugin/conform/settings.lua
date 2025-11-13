@@ -6,6 +6,8 @@ require("conform").setup({
         c = {'astyle', 'clang_format'},
         -- java
         java = {'astyle'},
+        -- golang
+        go = {'golines','golangci-lint','djlint'},
         -- html
         html = { "djlint" },
         javascript = { "prettier" },
