@@ -67,6 +67,9 @@ Plug 'kilavila/nvim-bufferlist'
 " Autotag
 Plug 'windwp/nvim-ts-autotag'
 
+" Tmux
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
 
 " Setting Plugin
@@ -101,4 +104,4 @@ lua require('plugin.copilot.settings')
 lua require('plugin.autotag.settings')
 
 " Load settings final to override all unused settings from plugin
-exe 'source' '~/AppData/Local/nvim/settings.vim'
+exe 'source' '~/.config/nvim/settings.vim'
