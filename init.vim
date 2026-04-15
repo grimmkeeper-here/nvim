@@ -103,5 +103,8 @@ lua require('plugin.copilot.settings')
 " Autotag settings
 lua require('plugin.autotag.settings')
 
+" Telescope
+lua require('plugin.telescope.settings')
+
 " Load settings final to override all unused settings from plugin
 exe 'source' '~/.config/nvim/settings.vim'
