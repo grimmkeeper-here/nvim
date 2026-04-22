@@ -35,7 +35,7 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'terrortylor/nvim-comment'
 
 " Theme
-" Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'tribela/transparent.nvim'
 
 " TagBar
@@ -69,6 +69,9 @@ Plug 'windwp/nvim-ts-autotag'
 
 " Tmux
 Plug 'christoomey/vim-tmux-navigator'
+
+" Debug
+Plug 'mfussenegger/nvim-dap'
 
 call plug#end()
 
@@ -105,6 +108,9 @@ lua require('plugin.autotag.settings')
 
 " Telescope
 lua require('plugin.telescope.settings')
+
+" Debug
+lua require('plugin.dap.settings')
 
 " Load settings final to override all unused settings from plugin
 exe 'source' '~/.config/nvim/settings.vim'
